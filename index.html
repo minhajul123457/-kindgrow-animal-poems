@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirecting...</title>
+    <script>
+      var lang = navigator.language || navigator.userLanguage;
+      if (lang.includes("IN")) {
+        window.location.href = "https://www.amazon.in/dp/B0D2BQ3XZ4";
+      } else if (lang.includes("US")) {
+        window.location.href = "https://www.amazon.com/dp/B0D2BQ3XZ4";
+      } else if (lang.includes("UK")) {
+        window.location.href = "https://www.amazon.co.uk/dp/B0D2BQ3XZ4";
+      } else {
+        window.location.href = "https://www.amazon.com/dp/B0D2BQ3XZ4";
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to your Amazon store...</p>
+  </body>
+</html>
