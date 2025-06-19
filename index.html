@@ -19,3 +19,28 @@
     <p>Redirecting to your Amazon store...</p>
   </body>
 </html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirecting...</title>
+    <script>
+      var lang = navigator.language || navigator.userLanguage;
+      if (lang.includes("IN")) {
+        // India Amazon link (same link use korchi, karon India link dao nai)
+        window.location.href = "https://www.amazon.com/dp/B0FDH3WXP3";
+      } else if (lang.includes("US")) {
+        // USA Amazon link
+        window.location.href = "https://www.amazon.com/dp/B0FDH3WXP3";
+      } else if (lang.includes("UK") || lang.includes("GB")) {
+        // UK Amazon link (same link use korchi)
+        window.location.href = "https://www.amazon.com/dp/B0FDH3WXP3";
+      } else {
+        // Other country — USA link by default
+        window.location.href = "https://www.amazon.com/dp/B0FDH3WXP3";
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to your Amazon store...</p>
+  </body>
+</html>
